@@ -1,0 +1,52 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  min-height: 100vh;
+}
+.app .title {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 20px;
+}
+.app .title span {
+  color: red;
+}
+.app .amount {
+  transform: scale(1.5);
+  outline: none;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 4px;
+  color: white;
+  margin: 50px;
+  text-align: center;
+  transition: 500ms;
+}
+.app .amount:focus {
+  border-color: red;
+}
+.app .amount::placeholder {
+  color: rgba(255, 0, 0, 0.496);
+}
+.app .amount::-webkit-inner-spin-button {
+  display: none;
+}
+.app .output {
+  color: white;
+}
+.app .output .converted {
+  display: flex;
+  justify-content: space-between;
+}
+.app .output .name {
+  color: red;
+  margin-left: 20px;
+}
